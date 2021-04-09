@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator</title>
+    <link rel="stylesheet" type="text/css" href="MyCalculator.css">
+    <script src="MyCalculator.js"></script>
+</head>
+<body>
+    <h2>JavaScript Assignment: MyCalculator</h2>
+    <div class="calculator">
+       <ul class="radiobutton">
+            <li>
+                <label for="add">Add</label>
+                <input type="radio" id="add" name="operater" onclick="calculate()" value="Add" required>
+            </li>
+            <li>
+                <label for="subtract">Subtract</label>
+                <input type="radio" id="subtract" name="operater" onclick="calculate()" value="Subtract" required>
+            </li>
+            <li>
+                <label for="multiply">Multiply</label>
+                <input type="radio" id="multiply" name="operater" onclick="calculate()" value="Multiply" required>
+            </li>
+            <li>
+                <label for="divide">Divide</label>
+                <input type="radio" id="divide" name="operater" onclick="calculate()" value="Divide" required>
+            </li>
+            <li>
+                <label for="exponent">Exponent</label>
+                <input type="radio" id="exponent" name="operater" onclick="calculate()" value="Exponent" required>
+            </li>
+            <li>
+                <label for="mean">Mean</label>
+                <input type="radio" id="mean" name="operater" onclick="c_mean()" value="Mean" required>
+            </li>
+            <li>
+                <label for="quit">Quit</label>
+                <input type="radio" id="quit" name="operater" onclick="quit()" value="Quit" required>
+            </li>
+        </ul>
+        <br><br>
+        <div id="input1"></div>
+        <div id="input2"></div>
+    </div>
+    </div>
+    <p id="result_box"></p>
+        <div class="result_box">
+        <input type="submit" id="runCalculator" onclick="Calculator()" value="Run Calculator">
+    </div>
+</body>
+</html>

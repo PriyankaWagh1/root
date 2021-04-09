@@ -1,0 +1,103 @@
+html{
+    scroll-behavior: smooth;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculator{
+    text-align: center;
+    width:100%;
+    font-size: 1.2rem;
+    line-height: 30px;
+
+}
+.radiobutton{
+    list-style-type: none;
+    margin:30px 250px;
+    padding: 10px 10px;
+}
+.radiobutton label, .radiobutton input{
+    display: block;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+.radiobutton li{
+    position: relative;
+    float: left;
+    margin: 5px;
+    height: 45px;
+    width: 100px;
+}
+
+.radiobutton input[type="radio"]{
+    opacity:0;
+    z-index:10;
+}
+.radiobutton input[type="radio"]:checked+label, .Checked+label{
+    background-color: #333;
+    color: white;
+}
+.radiobutton label{
+    color:black;
+    border:1px solid whitesmoke;
+    background-color: cornsilk;
+    width:90px;
+    margin:15px;
+;   padding:5px;
+    cursor: pointer;
+    z-index: 8;
+}
+.radiobutton label:hover{
+    color:white;
+    background-color: #333;
+}
+
+input[type="text"]{
+    margin:20px 0px;
+    padding: 10px;
+    width:200px;
+    height:10px;
+    
+}
+#input1{
+    margin:10px 5px;
+}
+#input2 {
+    margin:10px 5px;
+}
+::placeholder{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.5;
+}
+.result{
+    text-align: center;
+}
+input[type="submit"]{
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:white;
+    background-color:crimson ;
+    cursor: pointer;
+    border: 1px solid white;
+}
+input[type="submit"]:hover{
+    background-color: teal;
+}
+.result-box{
+    text-align: center;
+    
+}
+#result_box{
+    text-align: center;
+    color:black;
+    height: 20px;
+    
+}

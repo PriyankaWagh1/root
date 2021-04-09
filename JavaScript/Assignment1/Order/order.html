@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+</head>
+<body onclick="Help()">
+    <div class="pizza-form">
+        <div style="float: left;">
+            <label for="name">Name: </label>
+            <input type="text" id="name"> <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email">   <br> 
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <textarea name="help" id="help" cols="50" rows="5">This TEXTAREA provides context - help. Click on any Input or use the TAB key to get more information about the input field.
+            </textarea> 
+        </div> <br><br><br><br>
+        <label for="">Toppings:</label> <br>
+        <label for="extra_cheese">Extra cheese</label>
+        <input type="checkbox" name="Toppings" value="Extra cheese" id="extra_cheese">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" name="Toppings" value="Pepperoni" id="pepperoni">
+        <label for="olives">Olives</label>
+        <input type="checkbox" name="Toppings" value="Olives" id="olives">
+        <label for="pepper">Pepper</label>
+        <input type="checkbox" name="Toppings" value="Pepper" id="pepper">
+        <label for="bacon">Bacon</label>
+        <input type="checkbox" name="Toppings" value="Bacon" id="bacon">
+        <label for="tomatoes">Tomatoes</label>
+        <input type="checkbox" name="Toppings" value="Tomatoes" id="tomatoes">
+        <label for="mashrooms">Mashrooms</label>
+        <input type="checkbox" name="Toppings" value="Mashrooms" id="mashrooms"> <br>
+
+        <label for="">How do you want to get your pizza!</label>
+        <label for="delivery">Delivery</label><input type="radio" name="pizza" id="delivery" value="Yes">
+        <label for="pickup">Pick Up</label><input type="radio" name="pizza" id="pickup" value="No"> <br>
+
+        <label for="tip">Tip ?</label>
+        <select name="tip" id="tip">
+            <option>Select</option>
+            <option value="0.15">15%</option>
+            <option value="0.2">20%</option>
+            <option value="0.35">35%</option>
+        </select>
+        <hr>
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" cols="50" rows="10" required></textarea> <br>
+
+        <input type="submit" id="submit" onclick="validation()" value="Submit">
+        <input type="button" id="reset" value="Reset" onclick="window.location.reload();">
+        <input type="button" id="summary" onclick="summary()" value="Show Summary">
+    
+        <h2>Pizza Order Summary</h2>
+        <table border="1" id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Toppings</th>
+                    <th>Delivery ?</th>
+                    <th>Tip Amount</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

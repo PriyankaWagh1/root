@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <label for="fahrenheit">Fahrenheit : </label>
+    <input type="text" id="fahrenheit"><br><br>
+    <button onclick="temp_Convert()">Show Results</button>
+    <br><br>
+    <label for="celcius">Celcius : </label>
+    <p id="celcius"> 
+
+    <script>
+    
+        function temp_Convert() {
+
+        fahrenheit = document.getElementById('fahrenheit').value;
+        
+
+        if (fahrenheit == '' || fahrenheit ==' ' || fahrenheit % 1 !=0) {
+            document.getElementById('celcius').innerHTML="Please enter a number!";
+        } else {
+            
+            celsius = (parseFloat(fahrenheit) - 32) * (5/9);
+            document.getElementById('celcius').innerHTML=celsius + "<sup> o</sup>C";
+        }
+    }
+    </script>
+</body>
+</html>
