@@ -1,0 +1,281 @@
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:rgb(255, 255, 249);
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .bg-image{
+      background: url("../img/comicstaan.jpg") no-repeat center/cover;
+      height:100vh;
+      width:100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+  }
+  nav {
+    height: 50px;
+    width: 100vw;
+    background-color:orange;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 15;
+  }
+  nav ul {
+    display:block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  nav li {
+    float: left;
+  }
+  nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color:white;
+    text-decoration: none;
+  }
+  nav li:hover {
+    background-color: rgb(247, 117, 10);
+    height: 50px;
+  }
+  h1{
+    height: 40px;
+    position: absolute;
+    top:40%;
+    left: 6%;
+    font-size: 70px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 11;
+    padding-bottom: 0px;
+  }
+  .logo{
+    background: orange;
+    height: 150px;
+    padding: 20px 50px 30px 50px;
+    margin-left: 4rem;
+  }
+  .bg-image h3{
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    font-family:cursive ;
+    z-index: 11;
+    top:60%;
+    left:15%;
+    padding:10px 12px;
+  }
+  #speakers {
+    display: block;
+    padding:20px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    align-items: center;
+    font-size:x-large;
+    
+  }
+
+  #speakers ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #speakers li {
+    margin-bottom: 15px;
+    background-image: linear-gradient(to bottom, yellow, #ffd311, #ff9011);
+    color:black;
+    
+  }
+
+  .card-content {
+    height:80px;
+    
+  }
+  .card-title{
+    padding-bottom: 50px;
+    
+  }
+  .card img{
+      height: 280px; 
+      width: 300px;
+      margin: 50px 0px 0px 0px;
+  }
+  
+  .card:hover{
+      border: 3px outset gray;
+  }
+ 
+ 
+
+  /*Schedule*/
+.section-a{
+    display: flex;
+    gap:10px;
+    background-color: white;
+    justify-content: center;
+    color:black;
+    height: 300px;
+  }
+  .section-a h3{
+    text-align: center;
+  } 
+  .sdate, .edate{
+    padding:70px;
+    
+  }
+  .details{
+    color: black;
+    background-color:rgb(255, 239, 15);
+    padding: 15px 0px;
+  }
+  
+  /*venue*/
+  .section-b{
+    background-color: orange;
+    padding: 20px 0 30px 0;
+    color: black;
+  }
+  .section-b h3{
+    font-size: 30px;
+  }
+  .section-b p{
+    font-size: 25px;
+  }
+  .section-c{
+    padding:20px;
+  }
+  .section-c a{
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid whitesmoke;
+  }
+  .section-c a:hover{
+    background-color: rgb(202, 40, 11);
+  }
+  /* Footer */
+
+  .primary-footer {
+    padding: 1em;
+    background: rgb(61, 60, 60);
+    color: #fff;
+    height:30px;
+    text-align: center;
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 768px) {
+
+    main{
+      margin-right: -40px;
+    }
+
+    nav{
+      width: 90%;
+      height: 80px;
+    }
+    nav li{
+      display: inline;
+      font-size: 15px;
+      float: left;
+    }
+
+    .bg-image{
+      width: 90%;
+      margin-left: -36px;
+    }
+    .logo {
+      margin: 0 auto;
+      height: 50px;
+      width: 45%;
+    }
+    h1{
+      font-size: 1.5rem;
+    }
+    .bg-image h3{
+      font-size: 1rem;
+      margin-top: -80px;
+      margin-left: -5px;
+    }
+
+    #speakers{
+      margin: 0 auto;
+    }
+    #speakers h3{
+      margin-left: -80px;
+    }
+    #speakers li{
+      width: 300px;
+      margin-left: -5px;
+      
+    }
+    .card img{
+      height: 300px;
+      width: 280px;
+    }
+    .card-title{
+      margin-right: -80px;
+      font-size: 1.3rem;
+    }
+
+    .section-a{
+      display: block;
+      font-size: 15px;
+    }
+    .sdate h3, .edate h3{
+      margin-top: -50px;
+      margin-left: -80px;
+    }
+    .sdate p, .edate p{
+      margin-left: -80px;
+    }
+    .section-a img{
+      height: 100px;
+      margin-top: -70px;
+      margin-left: -80px;
+    }
+
+    .details{
+      width: 90%;
+      margin-top: 50px;
+      margin-left: -20px;
+    }
+    .section-b{
+      width: 90%;
+      margin-left: -20px;
+    }
+    .section-c{
+      width: 90%;
+      margin-left: -40px;
+    }
+    hr{
+      width: 80%;
+      margin-left: -5px;
+    }
+    .primary-footer{
+      width: 84%;
+      margin-left: -30px;
+    }
+  }
+  
+  

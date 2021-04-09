@@ -1,0 +1,15 @@
+body{
+    background-color: mintcream;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    animation :demo 3s 2s ease-out forwards ;
+    
+}
+@keyframes demo{
+    0%{opacity: 0;transform:translateY(-50px)};
+    50%{ transform: translateY(500px)};
+    100%{ transform: translateY(430px);}
+}

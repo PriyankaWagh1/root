@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background:seashell;
+    height: auto;
+}
+.main{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+#landing-image{
+    background-image: url("/img/photography.jfif");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    flex:0 1 60vw;
+    margin:0;
+    z-index: 2;
+}
+#landing{
+    background:lavenderblush;
+}
+#landing-text{
+    display: flex;
+    flex:0 1 40vw;
+    height:50vh;
+    justify-content: center;
+    align-items: center;
+    padding:30px 30px;
+}
+#landing-text h2{
+    color:brown;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1:hover{
+    font-family: cursive;
+    color:#3f3c3c;
+}
+h2{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+img{
+    display:block;
+    width:80%;
+    margin: auto;
+}
+img:hover{
+        border: 2px inset red;
+}
+.btn{
+    padding:10px 20px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 20px 0;
+    text-decoration: none;
+    color:#333;
+    background-color:lightcoral;
+    font-weight: bold;
+}
+.btn:hover{
+    background: #f4f4f4;
+}
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+  }
+  
+  #header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .caption {
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+  }
+  
+  footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  /* Screen Sizes 500px and Up */
+  @media (min-width: 500px) {
+    #landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    #landing-text {
+      height: 100vh;
+    }
+  
+    #landing-image {
+      height: 100vh;
+    }
+  }
+  
+  /* Screen Sizes 700px and Up */
+  @media (min-width: 700px) {
+    .btn {
+      padding: 1rem 3rem;
+    }
+  }

@@ -1,0 +1,138 @@
+body{
+    background-color:white;
+    min-width: 290px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar{
+position: fixed;
+min-width: 290px;
+top: 0px;
+left: 0px;
+width:300px;
+height:100%;
+border-right: 1.5px solid #3f3c3c;
+background-color:rgb(35, 194, 35);
+
+}
+header{
+    color:black;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: thin;
+    background-color: rgb(35, 194, 35);
+}
+#main-doc h1{
+    text-align: left;
+    margin: 2px;
+    padding:0px 12px;
+}
+#navbar ul{
+    background-color:rgb(51, 54, 56);
+    height: 85%;
+    padding:0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li{
+    color:gray;
+    border-top:1px solid;
+    list-style: none;
+    position: relative;
+    width:100%
+}
+#navbar a{
+    display: block;
+    text-decoration: none;
+    padding:10px 15px;
+    color: white;
+    cursor: pointer;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+  
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+    padding:10px ;
+}
+
+#main-doc hr{
+     color:black;
+ } 
+section li {
+    margin: 15px 0px 0px 20px;
+}
+section img{
+    width:400px;
+    height:300px;
+    margin: 8px;
+    align-items: center;
+}
+section img:hover{
+    width:500px;
+    height:400px;
+    margin:auto;
+    animation: shadow 3s infinite;
+}
+.main-section #section p{
+    background-color:lightyellow;
+    padding:10px ;
+    margin: 10px;
+    font-size: 10px;
+}
+.main-section h3{
+    font-size: 15px;
+}
+.main-section h3:hover{
+    font-size: 20px;
+}
+@keyframes shadow {
+    50% {box-shadow: 5px 8px grey;}
+}
+@media only screen and (max-width: 815px) {
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }

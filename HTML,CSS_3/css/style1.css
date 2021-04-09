@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1em;
+    background: url('../img/back1.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  #container{
+    background-color: #F5F5DC;
+    width:1000px;
+    height:auto;
+    margin: auto;
+    justify-content: center;
+}
+#header{
+    background: teal;
+    height:70px;
+}
+#header #heading {
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top:10px;
+    padding:25px;
+    text-transform: uppercase;
+  }
+.image-quote img{
+    width: 900px;
+    position: relative;
+    height:500px;
+    padding:30px;
+    margin:5px 20px;
+    justify-content: left;
+} 
+.image-quote #text{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 22px;
+    font-family: cursive;
+    width:500px;
+    top: 25%;
+    left:12%;
+    text-align: center;
+    margin-left: 30px;
+    line-height: 25px;  
+}
+.image-quote #name{
+    position:absolute;
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: cursive;
+    top:260px;
+    margin-left: auto;
+    left:350px;
+}
+
+#side-content {
+    height: 700px;
+    width: 650px;
+    position: relative;
+    bottom: 680px;
+    top:10px;
+    margin-left: 50px;
+    
+}
+
+.details {
+    font-size: 90%;
+    font-family: 'Dosis' , sans-serif;
+    position: relative;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.th, .details td {
+    vertical-align: top;
+    border: 0;
+    border-bottom: 1px solid #3f3c3c;
+    margin-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+a {
+    color: #3f3c3c;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: teal;
+}
+a:visited{
+    color:purple;
+}
+
+#nutshell {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 26px;
+    margin:20px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.subsection-header{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10px;
+    top:930px;
+    padding-left:40px ;
+    padding-bottom: 40px;
+}
+.content{
+    font-size: 16px;
+    font-family: sans-serif;
+    width:900px;
+    position:absolute;
+    text-align: center;
+    top:930px;
+    margin-top: 100px;
+    padding-left:40px;
+}
+.content #list{
+    line-height: 25px;
+    text-align: left;
+    padding: 25px;
+}
+
+hr{
+    margin-top: 140px;
+}
+
+#footer {
+    background-color: teal;
+    height: 50px;
+    position:relative;
+    text-align: center;
+    padding: 15px;
+    margin-top: -12px;
+    color: #F5F5DC;
+}
+#footer a {
+    color: blue;
+    text-decoration:none;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+#footer a:visited{
+    color:purple;
+}
+  
