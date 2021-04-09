@@ -1,0 +1,17 @@
+.example{
+  background: lightcyan;
+  height: 20px;
+}
+.example1 {
+border: 5px solid black;
+background: lightcyan;
+}
+.example2 {
+  border: 3px solid black;
+  background: lightcyan;
+}
+
+.example3 {
+  border: 1px solid black;
+  background: lightcyan;
+}

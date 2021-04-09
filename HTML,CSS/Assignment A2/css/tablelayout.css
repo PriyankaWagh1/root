@@ -1,0 +1,11 @@
+
+table{
+    border:green;
+    border-style:solid;
+    border-collapse: separate;
+    font-family: sans-serif ;
+}
+th{
+    background-color: green;
+    color:white;;
+}
