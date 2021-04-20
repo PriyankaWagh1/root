@@ -1,0 +1,3 @@
+Working with files is a common task with any programming language. 
+File manipulation requires us to know their location. 
+One of the most fundamental ways to interact with files is to list files in a directory.

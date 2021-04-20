@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="book">
+        <h1>Books Shopping List</h1>
+        <p  style="text-align: left; margin-left: 10px;">Select items:</p>
+        <form action="/items" method="POST">
+            <ul>
+                <li>
+                    <input type="checkbox" id="ikigai" name="input" value="book1">
+                    <label for="ikigai">Ikigai</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="last_wish" name="input" value="book2">
+                    <label for="last_wish">Her Last Wish</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sapiens" name="input" value="book3">
+                    <label for="sapiens">Sapiens: Brief History of humankind</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="triology" name="input" value="book4">
+                    <label for="triology">Shiva Triology</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="alchemist" name="input" value="book5">
+                    <label for="alchemist">The Alchemist</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="you_can_win" name="input" value="book6">
+                    <label for="you_can_win">You Can Win</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="harry_potter" name="input" value="book7">
+                    <label for="harry_potter">Harry Potter: The Goblet of Fire</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="rich_dad" name="input" value="book8">
+                    <label for="rich_dad">Rich Dad Poor Dad</label>
+                </li>
+            </ul>
+            <input type="submit" value="Submit">
+            <a href="/">Back</a href="/">
+        </form>
+</body>
+</html>
